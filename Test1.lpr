@@ -3,7 +3,8 @@ uses Crt;
 type
   Number = array [0..50] of string;
 var RandomSequence:Number;
-    level:integer;
+    User_guess:string;
+    Score:integer;
 
 Procedure GenerateSequence();
 var NextColour,a:integer;
@@ -33,35 +34,33 @@ begin
 end;
 
 Procedure GetUserInput();//Ryan
+var
+  Answer_Order : Integer;
+  Answer_Order : Array [1..50] of integer;
+  i:integer;
+  Score = 0
+  
+  
 begin
+writeln('Guess the first colour -');
+readln(Q1);
+if  Answer_Order = i:= 1 to 1 do 
+    begin
+    writeln('CORRECT');
+    writeln('Score ='+1); 
+   
+else 
+writeln('Wrong');
+
 end;
 
 Procedure VerifyInput();//Harry
 begin
-
+whe
 end;
 
 Procedure ShowColour();//Jacob
-var x:integer;
 begin
-x:=1000;
-for a:= 1 to 50 do
-begin  
-  if RandomSequence[a] = 'R' then
-    WriteRed();
-    Delay(x);
-  if RandomSequence[a] = 'B' then
-    WriteBlue();
-    Delay(x);
-  if RandomSequence[a] = 'G' then
-    WriteGreen();
-    Delay(x);
-  if RandomSequence[a] = 'Y' then
-    WriteYellow();
-    Delay(x);
-x-=10;
-end;
-
 
 end;
 
@@ -141,6 +140,8 @@ gotoxy(27,50);
 TextColor(White);
 write('Welcome to the SIMON game!');
 
+for a:=1 to 50 do
+    write(RandomSequence[a]);
 readln();
 end.
 
