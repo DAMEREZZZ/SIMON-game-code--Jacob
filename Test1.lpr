@@ -32,8 +32,31 @@ begin
 end;
 
 Procedure GetUserInput();//Ryan
+var
+  Answer_Order : Number;
+  i, Score, level, count:integer;
+  Sequence, RandomSequence:string;
+
 begin
+level := 1;
+For i :=0 to (level -1) do
+Writeln('What is the first colour - ');
+readln(Sequence);
+writeln(RandomSequence);
+readln;
+
+If Sequence[i]= RandomSequence[i]
+then
+Count:=Count+1;
+
+If count = 1 then
+begin
+  Score:=0;
+  writeln('Well done you guessed the first colour ');
+  Score := Score+1;
+  Writeln('Your score =',Score);
 end;
+end;                               
 
 Procedure VerifyInput();//Harry
 begin
